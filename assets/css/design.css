@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #232c29;
+    background-color: #efe0ce;
 }
 
 ul {
@@ -14,19 +14,35 @@ ul {
     padding: 5px 50px;
     overflow: hidden;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
     box-sizing: border-box;
     position: fixed;
     width: 100%;
-    top: -5px;
+    top: 0;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, #b44321, #2c4644, #2c4644, #2c4644);
+    background: #232c29;
 }
 
 ul li {
     display: inline;
+}
+
+ul li img {
+    height: 80px;
+    width: auto;
+    scale: 150%;
+    left: 1%;
+    margin: 0;
+    z-index: 101;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    z-index: 999;
 }
 
 ul li a {
@@ -35,8 +51,8 @@ ul li a {
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
-    font-weight: 750;
-    transition: 0.5s;
+    font-weight: 700;
+    transition: 0.3s;
 }
 
 ul li a:hover,
@@ -45,30 +61,21 @@ ul li a.current {
 }
 
 h1 {
-    position: absolute;
-    text-align: left;
-    color: #fa9f11;
-    font-size: 150px;
+    position: relative;
+    font-size: 100px;
     font-weight: 1000;
-    margin-top: -1%;
-    margin-left: 2%;
-    z-index: 101;
 }
 
 h2 {
     position: relative;
-    text-align: left;
-    color: #efe0ce;
-    font-size: 50px;
-    margin-top: -130px;
-    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 750;
 }
 
 h3 {
-    margin-top: 150px;
-    margin-left: 250px;
+    position: relative;
     font-size: 75px;
-    font-weight: 1000;
+    font-weight: 500;
     color: #efe0ce;
 }
 
@@ -83,21 +90,18 @@ a.current {
 }
 
 p {
-    margin-top: 5px;
-    margin-left: 250px;
     font-size: 30px;
-    color: #efe0ce;
 }
 
 .bg_image {
-    position: fixed;   
-    right: -7%;         
+    position: fixed;
+    right: -7%;
     bottom: -5%;
-    width: 50%;     
-    height: auto;     
-    z-index: -1;     
+    width: 50%;
+    height: auto;
+    z-index: 0;
     display: block;
-    margin: 0;           
+    margin: 0;
     scale: 120%;
     opacity: 0.5;
 }
