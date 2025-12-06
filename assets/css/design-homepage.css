@@ -46,7 +46,9 @@
   text-align: center;
   margin-top: -100px;
 
-}img.front {
+}
+
+img.front {
   position: absolute;
   bottom: 0;
   left: 0;

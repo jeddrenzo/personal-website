@@ -70,7 +70,8 @@
     color: #444;
 }
 
-.contact-info p, .contact-info a {
+.contact-info p,
+.contact-info a {
     font-size: 1.1rem;
     margin-bottom: 10px;
     text-decoration: none;
@@ -86,9 +87,12 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .contact-form, .contact-info {
+
+    .contact-form,
+    .contact-info {
         flex: 1;
     }
+
     .contact-form {
         margin-right: 40px;
     }
