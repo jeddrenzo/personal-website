@@ -92,16 +92,3 @@ a.current {
 p {
     font-size: 30px;
 }
-
-.bg_image {
-    position: fixed;
-    right: -7%;
-    bottom: -5%;
-    width: 50%;
-    height: auto;
-    z-index: 0;
-    display: block;
-    margin: 0;
-    scale: 120%;
-    opacity: 0.5;
-}

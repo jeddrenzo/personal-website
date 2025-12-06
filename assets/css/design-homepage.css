@@ -13,13 +13,18 @@
   height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* align content vertically to the top */
-  align-items: flex-start;     /* left-align the content */
-  text-align: left;            /* ensure text inside is left-aligned */
+  justify-content: flex-start;
+  /* align content vertically to the top */
+  align-items: flex-start;
+  /* left-align the content */
+  text-align: left;
+  /* ensure text inside is left-aligned */
   z-index: 2;
-  margin: 0 auto;              /* center the whole div horizontally */
-  width: fit-content;          /* shrink to content so "centering" works */
-  z-index: -1;
+  margin: 0 auto;
+  /* center the whole div horizontally */
+  width: fit-content;
+  /* shrink to content so "centering" works */
+  z-index: 1;
 }
 
 .statement h1 {
@@ -45,22 +50,33 @@
   color: #62796a;
   text-align: center;
   margin-top: -100px;
-}
 
-.hero-banner {
+}img.front {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  rotate: -5deg;
-  scale: 120%;
-}
-
-.hero-banner img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
+  z-index: 2;
+  transition: transform 1s ease; /* smooth animation */
+}
+
+img.front:hover {
+  transform: translateY(30px); /* moves image downward */
+}
+
+img.back {
+  position: fixed;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  opacity: 0.3;
+  z-index: -1;
+  transition: transform 1s ease; /* smooth animation */
 }
